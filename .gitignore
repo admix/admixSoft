@@ -11,3 +11,5 @@
 *.lai
 *.la
 *.a
+/May21/dist/
+/May21/build/
