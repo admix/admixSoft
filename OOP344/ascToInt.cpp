@@ -11,7 +11,10 @@ int ascToInt(const char *ch);
 
 int main(){  //sample main() where you can test the function
   int num;
-  num = ascToInt("-32");
+  char* str;
+  cout<<"Enter a number: ";
+  cin>>str;
+  num = ascToInt(str);
   cout<<"number = "<<num<<endl;
   return 0;
 }
