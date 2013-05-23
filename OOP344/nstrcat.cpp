@@ -10,17 +10,17 @@ int main(){
     cout<<nstrcat(str, first, " ", second, " HeeHaw", '\0')<<endl;
     return 0;
 }
-const char* nstrcat( char* to, ...){
+const char* nstrcat( char* to, ...){ //Sample main() to test the program
 	char* inTo;
 	int i = 0;
 	va_list varg;
   va_start(varg, to);
   inTo = va_arg(varg, char*);
   while(*to)to++;
-  while(inTo && *inTo){	
+  while(inTo && *inTo){	 //returns '1' if true
   	while(*inTo){
   		to[i] = *inTo;
-  		i++;
+  		i++;				//keep going through the arguments
   		inTo++;
   	}
   	inTo = va_arg(varg, char*);
