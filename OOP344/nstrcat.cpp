@@ -1,7 +1,8 @@
 #include <iostream>
 #include <stdarg.h>
 using namespace std;
-
+//some comments to test
+//one more line
 const char* nstrcat(char* to, ...);
 int main(){
     char str[100] = "";
